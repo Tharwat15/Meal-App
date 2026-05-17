@@ -54,6 +54,7 @@ const List<Category> DUMMY_CATEGORIES = [
     color: Colors.teal,
   ),
 ];
+
 const DUMMY_MEALS = [
   Meal(
     id: 'm1',
@@ -187,8 +188,8 @@ const DUMMY_MEALS = [
   Meal(
     id: 'm5',
     categories: [
-      'c2'
-          'c5',
+      'c2', // Fixed missing comma here
+      'c5',
       'c10',
     ],
     title: 'Salad with Smoked Salmon',
@@ -402,5 +403,296 @@ const DUMMY_MEALS = [
     isVegan: true,
     isVegetarian: true,
     isLactoseFree: true,
+  ),
+  Meal(
+    id: 'm11',
+    categories: ['c1', 'c5'],
+    title: 'Fettuccine Primavera',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-4cxrYUm_t65DiN6Ffajn3Y2UdfIQwSaKKA&s',
+    duration: 25,
+    ingredients: [
+      '200g Fettuccine Pasta',
+      '1 Zucchini, sliced',
+      '1 Bell Pepper, diced',
+      '100g Cherry Tomatoes',
+      '2 Garlic Cloves, minced',
+      '2 tbsp Olive Oil',
+      'Fresh Basil',
+      'Grated Parmesan (optional)'
+    ],
+    steps: [
+      'Boil fettuccine according to package instructions.',
+      'Heat olive oil in a pan and sauté garlic, zucchini, and bell pepper for 5 minutes.',
+      'Add cherry tomatoes and cook until they slightly soften.',
+      'Toss the drained pasta into the pan with veggies.',
+      'Garnish with fresh basil and optional parmesan before serving.'
+    ],
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: true,
+    isLactoseFree: false,
+  ),
+  Meal(
+    id: 'm12',
+    categories: ['c3'],
+    title: 'Gourmet BBQ Bacon Burger',
+    affordability: Affordability.Pricey,
+    complexity: Complexity.Challenging,
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4NehledkoNTv8XzV4RAMg67rGNpQSLOanw&s',
+    duration: 35,
+    ingredients: [
+      '200g Ground Beef',
+      '2 Slices of Crispy Bacon',
+      '1 Slice Cheddar Cheese',
+      '2 tbsp BBQ Sauce',
+      'Crispy Onion Rings',
+      '1 Brioche Bun'
+    ],
+    steps: [
+      'Season ground beef and shape into a thick patty.',
+      'Grill or pan-fry the patty for 5 minutes on each side; melt Cheddar on top during the last minute.',
+      'Toast the brioche bun lightly.',
+      'Layer the bottom bun with the cheesy patty, bacon, and crispy onion rings.',
+      'Drizzle generously with BBQ sauce and cover with the top bun.'
+    ],
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: false,
+    isLactoseFree: false,
+  ),
+  Meal(
+    id: 'm13',
+    categories: ['c8', 'c2'],
+    title: 'Quick Vegetable Stir-Fry',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://www.budgetbytes.com/wp-content/uploads/2022/03/Easy-Vegetable-Stir-Fry-V1.jpg',
+    duration: 15,
+    ingredients: [
+      '1 Broccoli Head, cut into florets',
+      '2 Carrots, julienned',
+      '100g Sugar Snap Peas',
+      '3 tbsp Soy Sauce',
+      '1 tbsp Sesame Oil',
+      '1 tbsp Honey or Maple Syrup',
+      'Sesame Seeds for garnish'
+    ],
+    steps: [
+      'Whisk soy sauce, sesame oil, and honey together in a small bowl.',
+      'Heat a large skillet or wok over high heat.',
+      'Add vegetables and stir-fry aggressively for 5-7 minutes until tender-crisp.',
+      'Pour sauce over the vegetables and toss to coat for 1 minute.',
+      'Sprinkle with sesame seeds and serve hot.'
+    ],
+    isGlutenFree: false,
+    isVegan: true,
+    isVegetarian: true,
+    isLactoseFree: true,
+  ),
+  Meal(
+    id: 'm14',
+    categories: ['c7', 'c10'],
+    title: 'Acai Berry Smoothie Bowl',
+    affordability: Affordability.Pricey,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Sr9MHyXKq0TIWzZd2Wx2lJbPmDu0Ml4J2Q&s',
+    duration: 10,
+    ingredients: [
+      '1 Frozen Acai Packet',
+      '100g Frozen Mixed Berries',
+      '1 Frozen Banana',
+      '100ml Almond Milk',
+      'Toppings: Granola, Chia Seeds, Sliced Strawberries, Shredded Coconut'
+    ],
+    steps: [
+      'Add the frozen acai, mixed berries, banana, and almond milk into a high-speed blender.',
+      'Blend on thick settings until completely smooth (it should have a soft-serve consistency).',
+      'Scoop the mixture into a wide bowl.',
+      'Arrange granola, chia seeds, strawberries, and coconut artfully across the top.'
+    ],
+    isGlutenFree: true,
+    isVegan: true,
+    isVegetarian: true,
+    isLactoseFree: true,
+  ),
+  Meal(
+    id: 'm15',
+    categories: ['c6', 'c10'],
+    title: 'Classic Mexican Guacamole & Chips',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://keviniscooking.com/wp-content/uploads/2022/10/Classic-Guacamole-Recipe-square.jpg',
+    duration: 12,
+    ingredients: [
+      '3 Ripe Avocados',
+      '1 Lime, juiced',
+      '1/2 Red Onion, finely diced',
+      '1 Roma Tomato, seeded and diced',
+      'Fresh Cilantro, chopped',
+      'Salt and Pepper',
+      '1 Bag of Tortilla Chips'
+    ],
+    steps: [
+      'Slice avocados, remove pits, and scoop the flesh into a medium bowl.',
+      'Mash with a fork leaving some chunkiness for texture.',
+      'Stir in lime juice immediately to prevent browning.',
+      'Gently fold in onion, tomato, cilantro, salt, and pepper.',
+      'Serve immediately alongside tortilla chips.'
+    ],
+    isGlutenFree: true,
+    isVegan: true,
+    isVegetarian: true,
+    isLactoseFree: true,
+  ),
+  Meal(
+    id: 'm16',
+    categories: ['c4'],
+    title: 'Hearty German Bratwurst with Sauerkraut',
+    affordability: Affordability.Pricey,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://www.budgetbytes.com/wp-content/uploads/2021/10/Bratwurst-and-Sauerkraut-2-500x375.jpg',
+    duration: 30,
+    ingredients: [
+      '4 Authentic German Bratwursts',
+      '400g Sauerkraut',
+      '1/2 Onion, chopped',
+      '1 tbsp Mustard',
+      '100ml White Wine or Apple Cider',
+      '1 tbsp Butter'
+    ],
+    steps: [
+      'In a saucepan, melt butter and cook onion until soft.',
+      'Add sauerkraut and white wine; simmer gently over low heat for 20 minutes.',
+      'Meanwhile, grill or pan-fry bratwursts over medium heat until uniformly browned and cooked through (about 10-12 minutes).',
+      'Plate the hot sauerkraut, sit bratwursts on top, and serve with a dollop of sharp mustard.'
+    ],
+    isGlutenFree: true,
+    isVegan: false,
+    isVegetarian: false,
+    isLactoseFree: false,
+  ),
+  Meal(
+    id: 'm17',
+    categories: ['c9'],
+    title: 'French Onion Soup',
+    affordability: Affordability.Pricey,
+    complexity: Complexity.Hard,
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDsPynoeilQJOLJMIUeZSqtAqMpDYTR5nvA&s',
+    duration: 75,
+    ingredients: [
+      '4 Large Yellow Onions, thinly sliced',
+      '2 tbsp Butter',
+      '1L Beef Broth',
+      '60ml Dry White Wine',
+      '1 French Baguette, sliced',
+      '150g Gruyere Cheese, grated'
+    ],
+    steps: [
+      'Melt butter in a large pot and add onions. Cook on low heat for 45 minutes, stirring often, until completely caramelized and dark brown.',
+      'Pour in white wine to deglaze the bottom of the pot.',
+      'Add beef broth, bring to a boil, then reduce heat and simmer for 20 minutes.',
+      'Ladle soup into oven-safe bowls.',
+      'Top with a slice of baguette and a mountain of Gruyere cheese.',
+      'Broil in the oven for 3-4 minutes until cheese is bubbling and golden.'
+    ],
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: false,
+    isLactoseFree: false,
+  ),
+  Meal(
+    id: 'm18',
+    categories: ['c7', 'c2'],
+    title: 'Avocado Toast with Poached Egg',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0Q4ps3bJJOapRB-4UU53-ydpGk4xvS1TRQ&s',
+    duration: 10,
+    ingredients: [
+      '2 Slices Sourdough Bread',
+      '1 Ripe Avocado',
+      '2 Fresh Eggs',
+      '1 tsp Red Pepper Flakes',
+      'Salt and Pepper'
+    ],
+    steps: [
+      'Toast sourdough slices to your preferred crispiness.',
+      'Mash avocado with salt, pepper, and a dash of lemon juice, then spread evenly on the toast.',
+      'Poach two eggs in simmering water with a splash of vinegar for 3 minutes.',
+      'Carefully place one poached egg onto each slice.',
+      'Garnish with red pepper flakes and extra cracked pepper.'
+    ],
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: true,
+    isLactoseFree: true,
+  ),
+  Meal(
+    id: 'm19',
+    categories: ['c6', 'c8'],
+    title: 'Thai Green Curry',
+    affordability: Affordability.Pricey,
+    complexity: Complexity.Challenging,
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSutuWdcI8nm-8xHg78AEtdvPn6XldTkghKeg&s',
+    duration: 40,
+    ingredients: [
+      '2 tbsp Thai Green Curry Paste',
+      '400ml Coconut Milk',
+      '300g Chicken Breast or Tofu, cubed',
+      '1 Bamboo Shoot Can, drained',
+      '1 Red Bell Pepper, sliced',
+      '1 tbsp Fish Sauce',
+      'Fresh Jasmine Rice'
+    ],
+    steps: [
+      'Heat 2 tablespoons of coconut milk in a wok, add curry paste, and fry until fragrant.',
+      'Add chicken or tofu and cook until browned on the outside.',
+      'Pour in the remaining coconut milk and bring to a simmer.',
+      'Drop in bell pepper and bamboo shoots; cook for 10 minutes.',
+      'Season with fish sauce and serve hot over steamed jasmine rice.'
+    ],
+    isGlutenFree: true,
+    isVegan: false,
+    isVegetarian: false,
+    isLactoseFree: true,
+  ),
+  Meal(
+    id: 'm20',
+    categories: ['c1', 'c10'],
+    title: 'Caprese Salad Skewers',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMoJW7z-MEn4BSroM4N-yK7Yb4HEKgC0dBA&s',
+    duration: 10,
+    ingredients: [
+      '200g Cherry Tomatoes',
+      '200g Mini Mozzarella Balls (Bocconcini)',
+      'Fresh Basil Leaves',
+      '2 tbsp Balsamic Glaze',
+      '2 tbsp Extra Virgin Olive Oil',
+      'Wooden Skewers'
+    ],
+    steps: [
+      'On a wooden skewer, thread a cherry tomato, a folded basil leaf, and a mini mozzarella ball.',
+      'Repeat the pattern until the skewer is comfortably full.',
+      'Arrange all finished skewers neatly on a serving platter.',
+      'Drizzle olive oil and thick balsamic glaze uniformly over the top just before serving.'
+    ],
+    isGlutenFree: true,
+    isVegan: false,
+    isVegetarian: true,
+    isLactoseFree: false,
   ),
 ];
